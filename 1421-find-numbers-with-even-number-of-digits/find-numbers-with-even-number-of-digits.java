@@ -1,9 +1,9 @@
 class Solution {
-    public int findNumbers(int[] nums) {
+    public int findNumbers(int[] arr) {
         int a=0;
-        for( int i :nums)
+        for( int i=0;i<arr.length;i++)
         {
-           int even=(int)(Math.log10(i))+1;
+           int even=(int)(Math.log10(arr[i]))+1;
              if(even%2==0)
              a++;
         }
