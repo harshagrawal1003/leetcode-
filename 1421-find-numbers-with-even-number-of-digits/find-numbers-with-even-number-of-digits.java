@@ -3,22 +3,11 @@ class Solution {
         int a=0;
         for( int i :nums)
         {
-            if(even(i))
-            a++;
+           int even=(int)(Math.log10(i))+1;
+             if(even%2==0)
+             a++;
         }
         return a;
     }
-    public static boolean even(int c)
-    {
-        int count=0;
-        while(c>0)
-        {
-            count++;
-            c/=10;
-        }
-        if(count%2==0)
-        return true;
-        else
-        return false;
-    }
+
 }
